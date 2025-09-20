@@ -1,46 +1,27 @@
-// import { createBrowserRouter, Route, RouterProvider } from "react-router-dom"
-// import RootLayout from "./components/RootLayout"
-// import Categories from "./categories/Categories"
-// import Categoryitem from "./category-items/Categoryitem"
-
-
-
-// export default function App() {
-//     const router = createBrowserRouter([
-//         {
-//             path:'/',
-//             element:<RootLayout />,
-//             children:[
-//               {
-//                 index:true,
-//                 element:<Categories />
-//               },
-//               {
-//                 path:'category-items/:name',
-//                 element:<Categoryitem />
-//               }
-
-//             ]
-//         }
-//     ])
-//   return <RouterProvider router={router} />
-// // } 
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./home/Home";
+
 import RootLayout from "./components/RootLayout";
-import Categories from "./categories/Categories";
-import Categoryitem from "./category-items/Categoryitem";
-
-
+import UserAdd from "./users/UserAdd";
+import UserEdit from "./users/UserEdit";
 
 export default function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <RootLayout />,
+      element:<RootLayout />,
       children: [
-        { index: true, element: <Categories /> },
-        { path: "category-items/:name", element: <Categoryitem /> },
+        { index: true, element:<Home />
+
+        },
+        {
+          path:'add-user',
+          element:<UserAdd />
+        },
+        {
+          path:'edit-user/:id',
+          element:<UserEdit />
+        }
         
       ],
     },
@@ -48,12 +29,3 @@ export default function App() {
 
   return <RouterProvider router={router} />;
 }
-
-
-
-
-// this is api connect
-
-
-
-
