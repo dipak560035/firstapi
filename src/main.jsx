@@ -9,6 +9,4 @@ createRoot(document.getElementById('root')).render(
   <HeroUIProvider>
     <App />
   </HeroUIProvider>
-
-
 )
