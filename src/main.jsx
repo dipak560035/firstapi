@@ -10,7 +10,6 @@ createRoot(document.getElementById('root')).render(
     <App />
   </HeroUIProvider>
 )
-
 // import './index.css'
 // import App from './App.jsx'
 // import { HeroUIProvider } from '@heroui/react'
