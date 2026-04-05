@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
     <App />
   </HeroUIProvider>
 )
-// imp
+// 
 // import App from './App.jsx'
 // import { HeroUIProvider } from '@heroui/react'
 // import '@fortawesome/fontawesome-free/css/all.min.css';
